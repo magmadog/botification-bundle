@@ -1,0 +1,36 @@
+{
+    "name": "sarbaev/botification-bundle",
+    "version": "0.1.0",
+    "type": "symfony-bundle",
+    "description": "Symfony bundle to control the sending of notifications to telegram/discord channels",
+    "license": "proprietary",
+    "require": {
+        "php": "^7.3",
+        "symfony/notifier": "5.2.*",
+        "symfony/http-client": "5.2.*"
+    },
+    "require-dev": {
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "sarbaev\\BotificationBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "sarbaev\\BotificationBundle\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test" : "./vendor/bin/simple-phpunit"
+    },
+    "extra": {
+        "symfony": {
+            "allow-contrib": false,
+            "require": "5.0.*"
+        }
+    }
+}

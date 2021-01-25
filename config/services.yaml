@@ -1,0 +1,26 @@
+parameters:
+  sarbaev.botification.telegram_token: 0000
+  sarbaev.botification.discord_token: 0000
+
+services:
+
+  # Конфигурация для всех сервисов  этого файла по умолчанию
+  _defaults:
+
+    # Включает механизм автоматической подстановки зависимостей контейнера
+    # в ваши сервисы по typehints аргументов конструктора (и экшнов контроллеров)
+    # https://symfony.com/doc/current/service_container.html#the-autowire-option
+    autowire: true
+
+    # Включает механизм автоконфигурации:
+    # сервисам автоматически добавляются теги по имплементируемым интерфейсам
+    # https://symfony.com/doc/current/service_container.html#the-autoconfigure-option
+    autoconfigure: true
+
+  # Регистрируем контроллеры бандла и репозиторий как DI-сервисы
+  sarbaev\BotificationBundle\Services\TelegramBotService: ~
+  sarbaev\BotificationBundle\Services\DiscordBotService: ~
+
+  sarbaev\BotificationBundle\Service\TelegramBotService:
+    arguments:
+      $telegramToken: '%sarbaev.botification.telegram_token%'
