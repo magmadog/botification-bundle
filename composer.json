@@ -16,12 +16,12 @@
     },
     "autoload": {
         "psr-4": {
-            "sarbaev\\BotificationBundle\\": "src/"
+            "magmadog\\BotificationBundle\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "sarbaev\\BotificationBundle\\Tests\\": "tests/"
+            "magmadog\\BotificationBundle\\Tests\\": "tests/"
         }
     },
     "scripts": {
