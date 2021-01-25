@@ -1,5 +1,4 @@
 <?php
-namespace sarbaev\Service;
 
 use Symfony\Component\Notifier\Exception\LengthException;
 use Symfony\Component\Notifier\Exception\TransportException;

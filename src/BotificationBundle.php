@@ -1,5 +1,5 @@
 <?php
-namespace sarbaev;
+namespace sarbaev\BotificationBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

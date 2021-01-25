@@ -1,5 +1,4 @@
 <?php
-namespace sarbaev\Service;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
