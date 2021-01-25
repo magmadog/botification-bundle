@@ -1,5 +1,5 @@
 {
-    "name": "sarbaev/botification-bundle",
+    "name": "magmadog/botification-bundle",
     "version": "0.1.0",
     "type": "symfony-bundle",
     "description": "Symfony bundle to control the sending of notifications to telegram/discord channels",

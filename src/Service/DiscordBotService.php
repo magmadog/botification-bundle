@@ -1,5 +1,5 @@
 <?php
-namespace sarbaev\BotificationBundle\Service;
+namespace magmadog\BotificationBundle\Service;
 
 use Symfony\Component\Notifier\Exception\LengthException;
 use Symfony\Component\Notifier\Exception\TransportException;

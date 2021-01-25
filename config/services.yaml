@@ -1,6 +1,4 @@
 parameters:
-  sarbaev.botification.telegram_token: 0000
-  sarbaev.botification.discord_token: 0000
 
 services:
 
@@ -20,7 +18,3 @@ services:
   # Регистрируем контроллеры бандла и репозиторий как DI-сервисы
   sarbaev\BotificationBundle\Services\TelegramBotService: ~
   sarbaev\BotificationBundle\Services\DiscordBotService: ~
-
-  sarbaev\BotificationBundle\Service\TelegramBotService:
-    arguments:
-      $telegramToken: '%sarbaev.botification.telegram_token%'
