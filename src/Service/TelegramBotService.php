@@ -1,4 +1,5 @@
 <?php
+namespace sarbaev\BotificationBundle\Service;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
