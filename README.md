@@ -18,12 +18,12 @@ composer require magmadog/botification-bundle
 ## Usage
 
 ### Telegram
-    * Create telegram bot.
-    **  For creating write to [BotFather](https://t.me/botfather).
-    ** After creation, the bot is given a generated **token**.
-    ** Add the bot to the group where you want to receive notifications.
-    ** Add [IDBot](https://t.me/myidbot) to this group and write ```telegram/getgroupid ```to receive **group id**.
-    * EXAMPLE USAGE
+* Create telegram bot.
+**  For creating write to [BotFather](https://t.me/botfather).
+** After creation, the bot is given a generated **token**.
+** Add the bot to the group where you want to receive notifications.
+** Add [IDBot](https://t.me/myidbot) to this group and write ```telegram/getgroupid ```to receive **group id**.
+* EXAMPLE USAGE
     ```
     ...
     use magmadog\BotificationBundle\Service\TelegramBotService;
@@ -36,16 +36,16 @@ composer require magmadog/botification-bundle
         ...
     }
     ```
-    where
+where
     - `TELEGRAM_TOKEN` is your Telegram token
     - `GROUP_ID` is your Telegram group id
 ### Discord
-    * Create webhook.
-    ** In your discord server `Edit Channel -> Integrations -> Webhooks -> New Webhook`
-    ** Configure a new webhook
-    ** Press `Copy Wevhook URL` and enter the received address in the search bar
-    ** Save strings `channel_id` and `token`
-    * EXAMPLE USAGE
+* Create webhook.
+** In your discord server `Edit Channel -> Integrations -> Webhooks -> New Webhook`
+** Configure a new webhook
+** Press `Copy Wevhook URL` and enter the received address in the search bar
+** Save strings `channel_id` and `token`
+* EXAMPLE USAGE
     ```
     ...
     use magmadog\BotificationBundle\Service\DiscordBotService;
@@ -58,13 +58,13 @@ composer require magmadog/botification-bundle
         ...
     }
     ```
-    where
+where
     - `DISCORD_TOKEN` is your Discord Webhook token
     - `CHANNEL_ID` is your Discord channel id
 
 ### Asynchronous notification sending mode 
-    Botification built on the basis of a `symfony/notifier` and uses `ChatMessage` to send notifications.
-    To enable asynchronous sending, you need add to configuration file `config/packages/messanger.yaml`:
+Botification built on the basis of a `symfony/notifier` and uses `ChatMessage` to send notifications.
+To enable asynchronous sending, you need add to configuration file `config/packages/messanger.yaml`:
     ```
     framework:
         ...
