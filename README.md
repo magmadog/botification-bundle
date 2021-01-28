@@ -69,7 +69,7 @@ Botification built on the basis of a `symfony/notifier` and uses `ChatMessage` t
 
 To enable asynchronous sending, you need add to configuration file `config/packages/messanger.yaml`:
 
-    ```yaml
+    ```
     framework:
         ...
         Symfony\Component\Notifier\Message\ChatMessage: async
