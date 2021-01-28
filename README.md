@@ -36,7 +36,7 @@ composer require magmadog/botification-bundle
         ...
     }
     ```
-where
+where:
     - `TELEGRAM_TOKEN` is your Telegram token
     - `GROUP_ID` is your Telegram group id
 ### Discord
@@ -60,7 +60,7 @@ where
     }
     ```
 
-where
+where:
     - `DISCORD_TOKEN` is your Discord Webhook token
     - `CHANNEL_ID` is your Discord channel id
 
