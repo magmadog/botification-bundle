@@ -43,7 +43,7 @@ where:
 * Create webhook.
     * In your discord server `Edit Channel -> Integrations -> Webhooks -> New Webhook`
     * Configure a new webhook
-    * Press `Copy Wevhook URL` and enter the received address in the search bar
+    * Press `Copy Webhook URL` and enter the received address in the search bar
     * Save strings `channel_id` and `token`
 * Example usage:
 
